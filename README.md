@@ -33,12 +33,12 @@ Note: You can also create a similar Python package and push it to your GitHub.
 
 Make a change to the repository: Add your co-authorship to the _\_\_init\_\_.py_ file (within the si folder):
 ```python
-__author__ = "YOUR_NAME" 
-__credits__ = ["YOUR_NAME"]
+__author__ = "Jose_Lemos" 
+__credits__ = ["Jose_Lemos"]
 __license__ = "Apache License 2.0"
 __version__ = "0.0.1"
-__maintainer__ = "YOUR_NAME"
-__email__ = "YOUR_EMAIL"
+__maintainer__ = "Jose_Lemos"
+__email__ = "zemarialemos@gmail.com"
 ```
 
 Then, commit it to your local repository and publish it to your GitHub:
