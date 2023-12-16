@@ -11,7 +11,7 @@ class PCA:
     
     n_components: int
       
-    Attributes;
+    Attributes:
     
     components: np.ndarray
         
