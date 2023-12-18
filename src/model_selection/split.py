@@ -34,21 +34,14 @@ def stratified_train_test_split(dataset: Dataset, test_size: float = 0.2, random
     """
     Split the dataset into training and testing sets preserving the proportion of samples per class
     
-    Parameters
-    ----------
-    dataset: Dataset
-        The dataset to split
-    test_size: float
-        The proportion of the dataset to include in the test split
-    random_state: int
-        The seed of the random number generator
+    Parameters:
+    dataset ->  The dataset to split
+    test_size -> The proportion of the dataset to include in the test split
+    random_state -> The seed of the random number generator
 
-    Returns
-    -------
-    train: Dataset
-        The training dataset
-    test: Dataset
-        The testing dataset
+    returns: 
+    train -> The training dataset
+    test -> The testing dataset
     """
 
     #set random state
