@@ -47,10 +47,8 @@ def stratified_train_test_split(dataset: Dataset, test_size: float = 0.2, random
     #set random state
     np.random.seed(random_state)
     
-    #get unique class labels and their counts
+    #get unique labels and counts
     labels, counts = np.unique(dataset.y, return_counts=True)
-
-    # initialize empty lists for the training and testing indices
     train_idxs = []
     test_idxs = []
 
@@ -61,7 +59,6 @@ def stratified_train_test_split(dataset: Dataset, test_size: float = 0.2, random
         # shuffle and select the indices of the samples with the current label and add them to the testing list
         permutations = np.random.permutation(np.where(dataset.y == label)[0])
         test_idxs.extend(permutations[:n_test])
-        # add the remaining indices to the training list
         train_idxs.extend(permutations[n_test:])
 
     train = Dataset(dataset.X[train_idxs], dataset.y[train_idxs], features=dataset.features, label=dataset.label)
